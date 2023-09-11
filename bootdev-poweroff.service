@@ -1,0 +1,12 @@
+[Unit]
+Description=Poweroff the removable device that contains /boot partition
+Requires=udisks2.service
+After=local-fs.target
+Before=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bootdev-poweroff.sh
+
+[Install]
+WantedBy=multi-user.target
