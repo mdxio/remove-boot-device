@@ -1,6 +1,6 @@
 # remove-boot-device
 
-Bash script and systemd service file to poweroff/unmount a boot partition that is on a removable device when the system boots.
+Bash script and systemd service file that powers off/unmounts a removable storage device containing the /boot partition of a Linux system.
 
 `$ git clone https://github.com/mdxio/remove-boot-device && cd remove-boot-device` 
 
